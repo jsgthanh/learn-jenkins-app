@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh'''
                     echo "Running tests..."
-                    test -f build/index.js || { echo "Build failed: build/index.js not found"; exit 1; }
+                    test -f build/index.html
                     ls -al build
                     npm test
                 '''
